@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Nama Hari Berdasarkan Nomor Hari</title>
+</head>
+<body>
+    <script>
+        // Meminta input nomor hari dari pengguna
+        const noHari = parseInt(prompt("Masukkan nomor hari (1-7):"));
+        const hari = ['SENIN', 'SELASA', 'RABU', 'KAMIS', 'JUMAT', 'SABTU', 'MINGGU'];
+
+        // Memeriksa apakah input nomor hari valid
+        if (noHari >= 1 && noHari <= 7) {
+            alert(`Hari ke-${noHari} adalah: ${hari[noHari - 1]}`);
+        } else {
+            alert('Input tidak valid, masukkan nomor antara 1 dan 7.');
+        }
+    </script>
+</body>
+</html>

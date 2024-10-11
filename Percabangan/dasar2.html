@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Bilangan Positif, Negatif, atau Nol</title>
+</head>
+<body>
+    <script>
+        // Meminta input bilangan dari pengguna
+        const angka = parseFloat(prompt("Masukkan sebuah bilangan:"));
+
+        // Mengecek apakah bilangan positif, negatif, atau nol menggunakan if-else
+        if (angka > 0) {
+            alert(angka + " adalah bilangan positif.");
+            console.log(angka + " adalah bilangan positif."); // Menampilkan hasil di konsol
+        } else if (angka < 0) {
+            alert(angka + " adalah bilangan negatif.");
+            console.log(angka + " adalah bilangan negatif."); // Menampilkan hasil di konsol
+        } else {
+            alert(angka + " adalah bilangan nol.");
+            console.log(angka + " adalah bilangan nol."); // Menampilkan hasil di konsol
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Bilangan Ganjil atau Genap</title>
+</head>
+<body>
+    <script>
+        // Meminta input bilangan dari pengguna
+        const angka = parseFloat(prompt("Masukkan sebuah bilangan:"));
+
+        // Mengecek apakah bilangan ganjil atau genap menggunakan if-else
+        if (angka % 2 === 0) {
+            alert(angka + " adalah bilangan genap.");
+            console.log(angka + " adalah bilangan genap."); // Menampilkan hasil di konsol
+        } else {
+            alert(angka + " adalah bilangan ganjil.");
+            console.log(angka + " adalah bilangan ganjil."); // Menampilkan hasil di konsol
+        }
+    </script>
+</body>
+</html>

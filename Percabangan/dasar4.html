@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Kelipatan Bilangan</title>
+</head>
+<body>
+    <script>
+        // Meminta input dari pengguna
+        const a = parseInt(prompt("Masukkan bilangan a (a >= b dan a > 0):"));
+        const b = parseInt(prompt("Masukkan bilangan b (b > 0):"));
+
+        // Memeriksa validitas input
+        if (!isNaN(a) && !isNaN(b) && a >= b && b > 0) {
+            // Menggunakan template literals untuk hasil
+            const kelipatan = (a % b === 0) 
+                ? `${a} adalah kelipatan dari ${b}` 
+                : `${a} bukan kelipatan dari ${b}`;
+            alert(kelipatan);
+        } else {
+            alert('Input tidak valid, pastikan a >= b dan b > 0.');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Hubungan Dua Bilangan</title>
+</head>
+<body>
+    <script>
+        // Meminta input dari pengguna
+        const x = parseFloat(prompt("Masukkan bilangan pertama (x):"));
+        const y = parseFloat(prompt("Masukkan bilangan kedua (y):"));
+
+        // Memeriksa apakah input adalah angka
+        if (!isNaN(x) && !isNaN(y)) { 
+            let hubungan;
+            if (x > y) {
+                hubungan = 'lebih besar dari';
+            } else if (x < y) {
+                hubungan = 'lebih kecil dari';
+            } else {
+                hubungan = 'sama dengan';
+            }
+            alert(`Bilangan ${x} adalah ${hubungan} ${y}`); // Menggunakan backticks untuk template literals
+        } else {
+            alert("Input tidak valid, silakan masukkan angka.");
+        }
+    </script>
+</body>
+</html>

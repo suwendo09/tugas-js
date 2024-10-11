@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <script>
+        // Fungsi untuk melakukan kalkulasi
+        function kalkulasi(a, operasi, b) {
+            let hasil;
+            
+            switch (operasi) {
+                case '+':
+                    hasil = a + b;
+                    break;
+                case '-':
+                    hasil = a - b;
+                    break;
+                case '*':
+                    hasil = a * b;
+                    break;
+                case '/':
+                    if (b !== 0) {
+                        hasil = a / b;
+                    } else {
+                        return 'Tidak bisa membagi dengan nol';
+                    }
+                    break;
+                default:
+                    return 'Operasi tidak valid';
+            }
+            return `${a} ${operasi} ${b} = ${hasil}`;
+        }
+
+        // Fungsi untuk meminta input dan menampilkan hasil
+        function jalankanKalkulator() {
+            const a = parseFloat(prompt("Masukkan angka pertama:"));
+            const operasi = prompt("Masukkan operasi (+, -, *, /):");
+            const b = parseFloat(prompt("Masukkan angka kedua:"));
+
+            const output = kalkulasi(a, operasi, b);
+            console.log(output); // Menampilkan hasil di konsol
+            alert(output); // Menampilkan hasil dalam pop-up alert
+        }
+
+        // Memulai kalkulator
+        jalankanKalkulator();
+    </script>
+</body>
+</html>
